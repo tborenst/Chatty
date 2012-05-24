@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Chatty</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel|Dynalight' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="/chat.css" />
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/util.js"></script>
+	<script type="text/javascript" src="/chat.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<h1>Chatty</h1>
+	<h2>What's your name?</h2>
+	<form action="" method="get" id="inputform">
+		<input type="text" name="name" onKeyPress="return checkSubmit(event)" class="stubborn"/>
+		<textarea name="message" cols="50" rows="1" onKeyPress="return checkSubmit(event)" onFocus="this.value='';"></textarea>
+	</form>
+</body>
+</html>
+
